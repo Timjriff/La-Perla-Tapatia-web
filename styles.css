@@ -478,6 +478,20 @@ h1 span {
   color: var(--paper);
 }
 
+.menu-page {
+  min-height: calc(100vh - 82px);
+}
+
+.menu-page-title {
+  margin-bottom: 0;
+  font-family: var(--font-display), Arial, sans-serif;
+  font-size: clamp(3.8rem, 8vw, 8rem);
+  font-weight: 900;
+  letter-spacing: -0.085em;
+  line-height: 0.83;
+  text-transform: uppercase;
+}
+
 .section-heading {
   display: grid;
   grid-template-columns: 1fr 0.7fr;
