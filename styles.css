@@ -47,29 +47,16 @@ a {
 }
 
 .brand {
-  display: inline-flex;
-  width: fit-content;
-  flex-direction: column;
-  align-items: center;
-  font-family: Georgia, "Times New Roman", serif;
-  line-height: 0.78;
-  transform: rotate(-2deg);
+  display: inline-block;
+  width: clamp(210px, 23vw, 310px);
+  line-height: 0;
 }
 
-.brand-pearl {
-  color: var(--red);
-  font-size: 1.45rem;
-  font-weight: 900;
-  letter-spacing: -0.08em;
-  text-shadow: 1px 1px 0 var(--yellow);
-}
-
-.brand-tapatia {
-  color: var(--green);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
 }
 
 nav {
@@ -920,8 +907,8 @@ footer {
   background: var(--cream);
 }
 
-.footer-brand .brand-pearl {
-  font-size: 1.8rem;
+.footer-brand {
+  width: clamp(240px, 28vw, 360px);
 }
 
 footer > p {
@@ -1052,6 +1039,14 @@ footer > p {
   .header-call {
     padding: 11px 13px;
     font-size: 0.65rem;
+  }
+
+  .brand {
+    width: 185px;
+  }
+
+  .footer-brand {
+    width: min(290px, 82vw);
   }
 
   .hero {
