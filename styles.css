@@ -205,6 +205,42 @@ h1 span {
   isolation: isolate;
 }
 
+.hero-photo {
+  position: relative;
+  min-height: 620px;
+  margin: 0;
+  overflow: hidden;
+  background: var(--green);
+}
+
+.hero-photo::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(14, 22, 16, 0.7));
+  content: "";
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-photo figcaption {
+  position: absolute;
+  right: 8%;
+  bottom: 10%;
+  z-index: 2;
+  max-width: 210px;
+  color: white;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+  text-align: right;
+  text-transform: uppercase;
+}
+
 .hero-art::before,
 .hero-art::after {
   position: absolute;
@@ -957,6 +993,10 @@ footer > p {
     min-height: 590px;
   }
 
+  .hero-photo {
+    min-height: 590px;
+  }
+
   .intro {
     grid-template-columns: 1fr;
   }
@@ -1063,6 +1103,10 @@ footer > p {
   }
 
   .hero-art {
+    min-height: 470px;
+  }
+
+  .hero-photo {
     min-height: 470px;
   }
 
