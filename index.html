@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <main>
@@ -20,13 +21,16 @@
       <a class="brand" href="#top" aria-label="La Perla Tapatia home">
         <img class="brand-logo" src="la-perla-tapatia-logo.png" alt="La Perla Tapatia — Authentic Mexican Food">
       </a>
-      <nav aria-label="Main navigation">
+      <nav id="main-navigation" aria-label="Main navigation">
         <a href="#story">Our story</a>
         <a href="menu.html">Menu</a>
         <a href="market.html">The Market</a>
         <a href="#visit">Visit</a>
       </nav>
       <a class="header-call" href="tel:+17607218486">Call to order</a>
+      <button class="mobile-menu-button" type="button" aria-label="Open navigation menu" aria-controls="main-navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </header>
 
     <section class="hero" id="top">
